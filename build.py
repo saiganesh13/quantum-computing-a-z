@@ -37,7 +37,7 @@ def build() -> Path:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" href="{FAVICON}">
-<meta property="og:title" content="Into the Cryostat">
+<meta property="og:title" content="Quantum Computing A-Z">
 <meta property="og:description" content="An interactive guide to quantum computing, from the first qubit to fault-tolerant error correction, by Sai Ganesh Chidambaram.">
 <meta property="og:type" content="website">
 {RESET}
@@ -52,7 +52,7 @@ def build() -> Path:
 </html>
 """
     out = ROOT / "index.html"
-    out.write_text(page, encoding="utf-8")
+    out.write_text(page, encoding="utf-8", newline="\n")
     return out
 
 

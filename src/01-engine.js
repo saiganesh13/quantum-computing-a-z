@@ -1,6 +1,6 @@
 'use strict';
 /* =====================================================================
-   Into the Cryostat · core engine
+   Quantum Computing A-Z · core engine
    Simulation, drawing primitives and UI helpers shared by every lesson.
    ===================================================================== */
 const TAU = Math.PI * 2, S2 = Math.SQRT1_2, PI = Math.PI;

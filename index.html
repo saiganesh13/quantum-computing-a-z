@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23a2501a' stroke-width='5'/%3E%3Cline x1='32' y1='32' x2='32' y2='11' stroke='%23a2501a' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='11' r='6' fill='%23a2501a'/%3E%3C/svg%3E">
-<meta property="og:title" content="Into the Cryostat">
+<meta property="og:title" content="Quantum Computing A-Z">
 <meta property="og:description" content="An interactive guide to quantum computing, from the first qubit to fault-tolerant error correction, by Sai Ganesh Chidambaram.">
 <meta property="og:type" content="website">
 <style>
@@ -13,7 +13,7 @@ body{margin:0}
 img{max-width:100%}
 [hidden]{display:none!important}
 </style>
-<title>Into the Cryostat</title>
+<title>Quantum Computing A-Z</title>
 <meta name="description" content="An interactive guide to quantum computing, from the first qubit to error correction, by Sai Ganesh Chidambaram.">
 <meta name="author" content="Sai Ganesh Chidambaram">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -485,17 +485,17 @@ table.tbl{border-collapse:collapse;width:100%;font-size:15.5px;line-height:1.45}
 <body>
 <div class="app">
   <aside class="side" aria-label="Lessons">
-    <a class="brand" href="#home"><span class="brand-name">Into the Cryostat</span><span class="brand-by">by Sai Ganesh Chidambaram</span></a>
+    <a class="brand" href="#home"><span class="brand-name">Quantum Computing A-Z</span><span class="brand-by">by Sai Ganesh Chidambaram</span></a>
     <div id="nav-side"></div>
   </aside>
   <div class="col">
     <header class="topbar">
-      <a class="brand" href="#home"><span class="brand-name">Into the Cryostat</span><span class="brand-by">by Sai Ganesh Chidambaram</span></a>
+      <a class="brand" href="#home"><span class="brand-name">Quantum Computing A-Z</span><span class="brand-by">by Sai Ganesh Chidambaram</span></a>
       <button class="btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="drawer">Lessons</button>
     </header>
     <main id="main" tabindex="-1"></main>
     <footer class="foot">
-      <span>Into the Cryostat · written by Sai Ganesh Chidambaram</span>
+      <span>Quantum Computing A-Z · written by Sai Ganesh Chidambaram</span>
       <span>© 2026 Sai Ganesh Chidambaram</span>
     </footer>
   </div>
@@ -504,7 +504,7 @@ table.tbl{border-collapse:collapse;width:100%;font-size:15.5px;line-height:1.45}
   <div class="drawer-scrim" data-close></div>
   <nav class="drawer-panel" aria-label="Lessons">
     <div class="drawer-top">
-      <a class="brand" href="#home"><span class="brand-name">Into the Cryostat</span><span class="brand-by">by Sai Ganesh Chidambaram</span></a>
+      <a class="brand" href="#home"><span class="brand-name">Quantum Computing A-Z</span><span class="brand-by">by Sai Ganesh Chidambaram</span></a>
       <button class="btn sm" type="button" data-close>Close</button>
     </div>
     <div id="nav-drawer"></div>
@@ -513,7 +513,7 @@ table.tbl{border-collapse:collapse;width:100%;font-size:15.5px;line-height:1.45}
 <script>
 'use strict';
 /* =====================================================================
-   Into the Cryostat · core engine
+   Quantum Computing A-Z · core engine
    Simulation, drawing primitives and UI helpers shared by every lesson.
    ===================================================================== */
 const TAU = Math.PI * 2, S2 = Math.SQRT1_2, PI = Math.PI;
@@ -5919,7 +5919,7 @@ function renderHome(main) {
   main.append(h('section', { class: 'hero' },
     h('div', null,
       h('div', { class: 'eyebrow' }, 'An interactive guide to quantum computing'),
-      h('h1', null, 'Into the Cryostat'),
+      h('h1', null, 'Quantum Computing A-Z'),
       h('p', { class: 'hero-lede' }, 'Quantum processors run at the bottom of a dilution refrigerator, a hundredth of a degree above absolute zero. This guide takes the same route down. Each stage is colder than the last, and each lesson goes a little deeper, from a single qubit to error-corrected machines. Below the mixing chamber, six research tracks take you to where the field is working now, with the most room given to error correction and fault tolerance.'),
       h('p', { class: 'byline' }, 'Written by ', h('b', null, 'Sai Ganesh Chidambaram')),
       h('div', { class: 'hero-cta' },
@@ -5968,7 +5968,7 @@ function renderHome(main) {
       h('div', { class: 'legend-item' }, circ, h('h3', null, 'Circuits read left to right'),
         h('p', null, 'Each wire is a qubit starting in |0⟩. The top wire, q0, is the leftmost digit of every ket, so |10⟩ means q0 = 1 and q1 = 0.')))));
   main.append(h('section', { class: 'sec about' }, h('div', { class: 'eyebrow' }, 'About this guide'), h('h2', null, 'Written by Sai Ganesh Chidambaram'),
-    h('p', null, 'Into the Cryostat assumes high-school algebra and a little comfort with complex numbers. Everything else is built up from the first lesson. Every simulation runs live in your browser on the same small state-vector engine, so the numbers you see are computed, not drawn by hand.'),
+    h('p', null, 'Quantum Computing A-Z assumes high-school algebra and a little comfort with complex numbers. Everything else is built up from the first lesson. Every simulation runs live in your browser on the same small state-vector engine, so the numbers you see are computed, not drawn by hand.'),
     h('p', null, 'Your progress is stored only in this browser. Nothing you do here is sent anywhere.')));
 }
 
@@ -5997,7 +5997,7 @@ function route() {
   if (L) Prog.seen(L.id);
   if (L) renderLesson(L, main); else if (id === 'glossary') renderGlossary(main); else renderHome(main);
   renderNav(L ? L.id : id === 'glossary' ? 'glossary' : 'home');
-  document.title = L ? `${L.title} · Into the Cryostat` : id === 'glossary' ? 'Glossary · Into the Cryostat' : 'Into the Cryostat';
+  document.title = L ? `${L.title} · Quantum Computing A-Z` : id === 'glossary' ? 'Glossary · Quantum Computing A-Z' : 'Quantum Computing A-Z';
   closeDrawer();
   if (!firstRoute) { window.scrollTo(0, 0); main.focus({ preventScroll: true }); }
   firstRoute = false;

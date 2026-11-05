@@ -141,7 +141,7 @@ function renderHome(main) {
   main.append(h('section', { class: 'hero' },
     h('div', null,
       h('div', { class: 'eyebrow' }, 'An interactive guide to quantum computing'),
-      h('h1', null, 'Into the Cryostat'),
+      h('h1', null, 'Quantum Computing A-Z'),
       h('p', { class: 'hero-lede' }, 'Quantum processors run at the bottom of a dilution refrigerator, a hundredth of a degree above absolute zero. This guide takes the same route down. Each stage is colder than the last, and each lesson goes a little deeper, from a single qubit to error-corrected machines. Below the mixing chamber, six research tracks take you to where the field is working now, with the most room given to error correction and fault tolerance.'),
       h('p', { class: 'byline' }, 'Written by ', h('b', null, 'Sai Ganesh Chidambaram')),
       h('div', { class: 'hero-cta' },
@@ -190,7 +190,7 @@ function renderHome(main) {
       h('div', { class: 'legend-item' }, circ, h('h3', null, 'Circuits read left to right'),
         h('p', null, 'Each wire is a qubit starting in |0⟩. The top wire, q0, is the leftmost digit of every ket, so |10⟩ means q0 = 1 and q1 = 0.')))));
   main.append(h('section', { class: 'sec about' }, h('div', { class: 'eyebrow' }, 'About this guide'), h('h2', null, 'Written by Sai Ganesh Chidambaram'),
-    h('p', null, 'Into the Cryostat assumes high-school algebra and a little comfort with complex numbers. Everything else is built up from the first lesson. Every simulation runs live in your browser on the same small state-vector engine, so the numbers you see are computed, not drawn by hand.'),
+    h('p', null, 'Quantum Computing A-Z assumes high-school algebra and a little comfort with complex numbers. Everything else is built up from the first lesson. Every simulation runs live in your browser on the same small state-vector engine, so the numbers you see are computed, not drawn by hand.'),
     h('p', null, 'Your progress is stored only in this browser. Nothing you do here is sent anywhere.')));
 }
 
@@ -219,7 +219,7 @@ function route() {
   if (L) Prog.seen(L.id);
   if (L) renderLesson(L, main); else if (id === 'glossary') renderGlossary(main); else renderHome(main);
   renderNav(L ? L.id : id === 'glossary' ? 'glossary' : 'home');
-  document.title = L ? `${L.title} · Into the Cryostat` : id === 'glossary' ? 'Glossary · Into the Cryostat' : 'Into the Cryostat';
+  document.title = L ? `${L.title} · Quantum Computing A-Z` : id === 'glossary' ? 'Glossary · Quantum Computing A-Z' : 'Quantum Computing A-Z';
   closeDrawer();
   if (!firstRoute) { window.scrollTo(0, 0); main.focus({ preventScroll: true }); }
   firstRoute = false;

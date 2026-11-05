@@ -1,4 +1,4 @@
-# Into the Cryostat
+# Quantum Computing A-Z
 
 An interactive guide to quantum computing, written by **Sai Ganesh Chidambaram**.
 
